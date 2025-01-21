@@ -1,10 +1,10 @@
-Group Name   :
-Website Title:
-Group Leader :
-Group Member1:
-Group Member2:
-Group Member3:
-Group Member4:
+Group Name   : A.V.V.A
+Website Title: SSJourney
+Group Leader :  Mavroudis Evangelos
+Group Member1: Plloca Angel
+Group Member2: Gerasymenko Valeriia
+Group Member3: Ghaltakhchyan Ani
+Group Member4: -
 
 ## Instructions:
 - clone this repo
