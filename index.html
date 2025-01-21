@@ -1,15 +1,141 @@
+<!--Angel Plloca-->
 <!DOCTYPE html>
-<!-- Group name:
-     Group members:
--->
-<!-- developed by: -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Coursework</title>
-</head>
-<body>
-    <p>Add your code here</p>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SSJourney</title>
+        <link rel="stylesheet" type=text/css href="other/style.css">
+        <link rel="icon" type="image/icon" href="images/logotop.png">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <a href="index.html"><img id="top-logo" src="images/logotop.png" alt="Home Logo"></a>
+                <a href="index.html"><img id="site-title" src="images/topbanner.png" alt="SSJourney"></a>
+            </div>
+            <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">INNER</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="html/mercury.html">Mercury</a></li>
+                                <li><a href="html/Venus.html">Venus</a></li>
+                                <li><a href="html/Earth.html">Earth</a></li>
+                                <li><a href="html/Mars.html">Mars</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="">BULLIED</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="broken-link">Ceres</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the map!</span>
+                            </li>
+                            <li>
+                                <a href="#" class="broken-link">Pluto</a>
+                                <span class="broken-message">Oh oh, this should have worked! Try using the map!</span>
+                            </li>
+                            </li>
+                        </ul>
+                    </li>
+                        <li><a href="">OUTER</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="html/Jupiter.html">Jupiter</a></li>
+                                <li><a href="html/Saturn.html">Saturn</a></li>
+                                <li><a href="html/Uranus.html">Uranus</a></li>
+                                <li><a href="html/Neptune.html">Neptune</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="html/FAQ.html">FAQ</a></li>
+                        <li><a href="html/AboutUs.html">About Us</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main id="page-main">
+        <aside id="left-side">
+            <div class="ad-box"></div>
+                <div id="box1">
+                    <a target="_blank" href="html/alienTakeover.html">
+                    <img class="ads" src="images/alien takeover.jpeg" alt="AD 1">
+                    </a>
+                </div>
+                <div id="box2">
+                    <a target="_blank" href="html/alienTakeover.html">
+                    <img class="ads" src="images/astronaut black hole.jpeg" alt="AD 2">
+                    </a>
+                </div>
+                <div id="box3">
+                    <a target="_blank" href="html/alienTakeover.html">
+                    <img class="ads" src="images/earth black hole.jpeg" alt="AD 3">
+                    </a>
+                </div>
+        </aside>
+        <aside id="right-side">
+            <div class="ad-box"></div>
+                <div id="box1right">
+                    <a target="_blank" href="html/alienTakeover.html">
+                    <img class="ads" src="images/asteroid.jpeg" alt="AD 1">
+                    </a>
+                </div>
+                <div id="box2right">
+                    <a target="_blank" href="html/alienTakeover.html">
+                    <img class="ads" src="images/spacecasino.jpeg" alt="AD 2">
+                    </a>
+                </div>
+                <div id="box3right">
+                    <a target="_blank" href="html/alienTakeover.html">
+                    <img class="ads" src="images/aliensonearth.jpeg" alt="AD 3">
+                    </a>
+                </div>
+        </aside>
+        <section id="main-section">
+            <h1 style="text-align: center;">WELCOME TO YOUR SS JOURNEY</h1>
+            <p>Hello and welcome to our page, SSJourney! Here you will learn about our Solar System.
+                Using the map below, you can learn about each planet and asteroid belt by clicking on them.</p>
+            <br>
+            <p>How to use the map</p>
+            <p>Simply click on your desired planet  or celestial body and you will be redirected to a page about it.</p>
+            <div id="map-container">
+                <img id="map" usemap="#SS-map" src="images/SSMapFinall.png" alt="Solar System Map">
+                <!--Mapping done by Evangelos Mavroudis-->
+                <map name="SS-map">
+                    <area  target="#" alt="Sun" title="Sun" href="html/Sun.html" coords="0,106,44" shape="circle">
+                    <area  target="#" alt="Sun" title="Sun" href="html/Sun.html" coords="0,127,51" shape="circle">
+                    <area  target="#" alt="Mercury" title="Mercury" href="html/mercury.html" coords="77,125,15" shape="circle">
+                    <area  target="#" alt="Venus" title="Venus" href="html/Venus.html" coords="128,127,23" shape="circle">
+                    <area  target="#" alt="Earth" title="Earth" href="html/Earth.html" coords="188,125,24" shape="circle">
+                    <area  target="#" alt="Moon" title="Moon" href="html/Earth.html" coords="206,90,10" shape="circle">
+                    <area  class="broken-link" alt="Ceres" title="Ceres" href="#" coords="289,131,10" shape="circle">
+                    <area  target="#" alt="Mars" title="Mars" href="html/Mars.html" coords="248,127,21" shape="circle">
+                    <area  target="#" alt="Asteroid Belt" title="Asteroid Belt" href="html/AsteroidBelt.html" coords="301,-1,347,263" shape="rect">
+                    <area  target="#" alt="Jupiter" title="Jupiter" href="html/Jupiter.html" coords="396,127,42" shape="circle">
+                    <area  target="#" alt="Saturn" title="Saturn" href="html/Saturn.html" coords="500,128,42" shape="circle">
+                    <area  target="#" alt="Uranus" title="Uranus" href="html/Uranus.html" coords="586,130,28" shape="circle">
+                    <area  target="#" alt="Neptune" title="Neptune" href="html/Neptune.html" coords="648,128,21" shape="circle">
+                    <area class="broken-link" alt="Pluto" title="Pluto" href="#" coords="682,98,9" shape="circle">
+                </map>
+                <div id="map-message" class="broken-message"></div>
+            </div>
+            <div id="countdown-container">
+                <h2>Termination of contract with the Sun</h2>
+                <p id="countdown"></p>
+                <p>You might be curious to know what happens when this timer runs out!
+                    <br>Don't worry, you can skip to the good part!
+                    <br>Click the button below! 
+                </p>
+                <a id="button" href="html/endContract.html">Skip to the good part!</a>
+            </div> 
+        </section>         
+        </main>
+    <footer>
+        <a href="html/Ceres.html">
+            <img class="foot-img" src="images/ceres.png" alt="Ceres">
+        </a>
+        <p>This website was created to take over NASA and prove aliens are real and moon landing fake with non-existent funds. Help us!</p>
+        <a href="html/Pluto.html">
+            <img class="foot-img" src="images/pluto.png" alt="Pluto">
+        </a> 
+    </footer>
 </body>
+<script src="other/builliedJoke.js"></script>
+<script src="other/countdown.js"></script>
 </html>

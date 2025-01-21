@@ -1,0 +1,234 @@
+/*Valeriia Gerasymenko */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+body {
+    background-image: url(../images/darkstarsky.jpg);
+    font-family: "Oxanium", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+h1{
+    color:aliceblue;
+    text-align: center
+}
+p{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    color:aliceblue;
+}
+a{
+    cursor: pointer;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 10px 0;  
+    border-bottom: 3px solid rgb(85, 208, 239); 
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+    margin-right: 100px;
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    flex-grow: 1;
+}
+#top-logo{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+#site-title{
+    width: 700px;
+    height: auto;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    display:inline-block;
+    font-size: 20px;
+    transition: all ease-in 0.2s;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+}
+nav ul .dropdown-menu{
+    position: absolute;
+    width: 100px;
+    list-style: none;
+    opacity: 0;
+    background-color: rgb(45, 43, 43);
+    text-align: center;
+    z-index: -1;
+    margin-top: -60px;
+    display: block;
+    transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    border-radius: 15px;
+}
+nav ul .dropdown-menu li{
+    margin: 0;
+    width: 100%;
+} 
+nav ul .dropdown-menu li a{
+    padding: 10px 2px;
+    display: inline-block;
+    width: 100%;
+}
+nav ul li a:hover{
+    color: rgb(85, 208, 239);
+}
+nav ul li:hover > .dropdown-menu{
+   opacity: 1;
+   margin-top: 0;
+   z-index: 2;
+}
+.broken-message{
+    display: none;
+    position: absolute;
+    background-color: rgba(45, 43, 43, 0.9);
+    color: aliceblue;
+    left: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 15;
+    margin-top: 5px;
+    margin-left: 5px;
+    transform: translateY(-50%);
+}
+.broken-link{
+    position: relative;
+}
+#page-main{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+}
+.foot-img{
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+.members {
+    text-align: center;
+}
+.members-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2rem;
+}
+.left-container, .right-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(85, 208, 239); 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px aliceblue;
+    padding: 1.5rem;
+    width: 80%;
+    height: 300px;
+    max-width: 1000px;
+}
+.left-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.left img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.left p {
+    font-size: 1.2rem;
+    color: rgb(6, 53, 93);
+}
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    text-align: left;
+}
+.right p {
+    font-size: 1rem;
+    color: rgb(6, 53, 93);
+}
+
+.right .buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.right .button {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    color: white;
+    background-color:rgb(6, 53, 93);
+    text-decoration: none;
+    border-radius: 15px; 
+    text-align: center;
+    border: transparent 2px solid;
+}
+
+.right .button:hover {
+    background-color: transparent;
+    border: aliceblue 2px solid;
+    color: aliceblue;
+    transition: ease-in-out 0.3s;
+}

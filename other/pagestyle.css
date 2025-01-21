@@ -1,0 +1,248 @@
+/*Evangelos Mavroudis*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+body{
+    background-image:url(../images/darkstarsky.jpg);
+   margin:0%;
+}
+
+.plu,.sat,.mer,.ast{
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+   
+.plu{
+    color:rgb(132, 26, 26);
+    background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+}
+#plu1,#plu2,#plu3,#sat1,#sat2,#sat3,#mer1,#mer2,#mer3,#ast1,#ast2,#ast3{
+    color:beige;
+}
+   
+
+
+
+.plul{
+border-style: double;
+color:rgb(132, 26, 26);
+background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+margin-right:1000px;
+font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#pluview,#merview,#satview{
+    border-color: whitesmoke;
+  width: 500px;
+  height:500px;
+float:right;
+ border: solid aliceblue 5px;
+ border-radius: 25px;
+ object-fit:fill;
+ display: flex;
+ align-items: center;
+
+}
+
+.sat{
+    color:rgb(165, 159, 38);
+    background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+    background-size:auto;
+}
+
+
+.satul{
+    border-style: double;
+    color:rgb(165, 159, 38);
+    background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+    margin-right:1000px;
+    font-family: "Zen Dots", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .mer{
+        color:rgb(76, 78, 90);
+        background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+    }
+   
+    .merul{
+        border-style: double;
+        color:rgb(76, 78, 90);
+        background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+        margin-right:1000px;
+        font-family: "Zen Dots", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .ast{
+            color:rgb(177, 158, 158);
+            background: linear-gradient(to right, transparent, 0%, rgb(121, 126, 141), 0.1%,transparent);
+        }
+
+        #ast1,#plu1,#mer1,#sat1{
+            text-align: center;
+            font-size:100px;
+              font-family: "Bruno Ace SC", serif;
+              font-weight: 400;
+              font-style: normal;
+              color:beige;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 10px 0;  
+            border-bottom: 3px solid rgb(85, 208, 239); 
+            justify-content: flex-start;
+            box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+        }
+        #top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 50px;
+            width: 100%;
+            flex-grow: 1;
+        }
+        #top-logo{
+            width: 150px;
+            height: 150px;
+            margin: 0;
+            margin-left: 10px;
+            padding-right: 5px;
+        }
+        #site-title{
+            width: 700px;
+            height: auto;
+        }
+        img {
+            overflow-y: content-box;
+            overflow: clip;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav > ul > li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        nav ul li a{
+            color: rgb(255, 255, 255);
+            display:inline-block;
+            font-size: 20px;
+            transition: all ease-in 0.2s;
+            padding: 20px 0 20px 0;
+            text-decoration: none;
+        }
+        nav ul .dropdown-menu{
+            position: absolute;
+            width: 100px;
+            list-style: none;
+            opacity: 0;
+            background-color: rgb(45, 43, 43);
+            text-align: center;
+            z-index: -1;
+            margin-top: -60px;
+            display: block;
+            transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+            border-radius: 15px;
+        }
+        nav ul .dropdown-menu li{
+            margin: 0;
+            width: 100%;
+        } 
+        nav ul .dropdown-menu li a{
+            padding: 10px 2px;
+            display: inline-block;
+            width: 100%;
+        }
+        nav ul li a:hover{
+            color: rgb(85, 208, 239);
+        }
+        nav ul li:hover > .dropdown-menu{
+           opacity: 1;
+           margin-top: 0;
+           z-index: 2;
+        }
+        .broken-message{
+            display: none;
+            position: absolute;
+            background-color: rgba(45, 43, 43, 0.9);
+            color: aliceblue;
+            left: 100%;
+            padding: 8px 12px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 15;
+            margin-top: 5px;
+            margin-left: 5px;
+            transform: translateY(-50%);
+        }
+        .broken-link{
+            position: relative;
+        }
+        #page-main{
+            display: flex;
+            justify-content: space-between;
+        }
+        aside {
+            margin-top: 10px;
+            padding: 10px;
+            width: 15%;
+            background-image: url(../images/design3.png);
+            background-position: center;
+            background-size: auto; 
+            border: solid rgb(85, 208, 239) 3px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .ads:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .ad-box{
+            display: block;
+            position: sticky;
+        }
+        .ads{
+            width: 95%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding-right: auto;
+            padding-left: 5px;
+            max-width: 255px;
+        }
+        #left-side{
+            display: flex;
+            flex-direction: column;
+            order: 1;
+            left: 0;
+            align-self: center;
+        }
+        #right-side{
+            display: flex;
+            flex-direction: column;
+            order: 3;
+            right: 0;
+            align-self: center;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+            color: antiquewhite;
+        }
+        .foot-img{
+            width: auto;
+            height: 50px;
+            cursor: pointer;
+        }

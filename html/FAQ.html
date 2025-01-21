@@ -1,0 +1,310 @@
+<!--Valeriia Gerasymenko-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type=text/css href="../other/style.css">
+        <title>FAQ</title>
+        <link rel="icon" type="image/icon" href="../images/logotop.png">
+        <style>
+            body{
+                background-image: url('../images/Star\ sky.jpg');
+                font-family: "Oxanium", sans-serif;
+                color:aliceblue;
+                font-size: 20px;
+            }
+            #uptext{
+                margin-top:20px;
+                text-align: center;
+            }
+            header{
+                background-image: url('../images/back-toplogo.jpg');
+                background-size: 100vw 70vh;
+            }
+            p{
+                font-size: 17px;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            .faq-container {
+                max-width: 800px; 
+                margin: 20px auto; 
+                padding: 20px;
+                color: aliceblue; 
+            }
+            .faq-item {
+                border-bottom: 2px solid rgb(0, 0, 0); 
+                overflow: hidden; 
+            }
+            .faq-question {
+                color:aliceblue;
+                background-color:rgb(29, 29, 77); 
+                width: 100%;
+                padding: 20px;
+                text-align: left;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                transition: background-color 0.3s ease; 
+            }
+            .faq-question:hover {
+                background-color: rgb(49, 49, 130); 
+            }
+            .faq-question .arrow {
+                position: absolute;
+                right: 20px;
+                transition: transform 0.3s ease; 
+            }
+            .faq-question.active .arrow {
+                transform: rotate(180deg);
+            }
+            .faq-answer {
+                max-height: 0; 
+                overflow: hidden;
+                transition: max-height 0.3s ease; 
+                background-color: rgb(0, 0, 20); 
+            }
+            .faq-answer p {
+                padding: 20px;
+                font-size: 16px;
+                line-height: 1.5; 
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <a href="../index.html"><img id="top-logo" src="../images/logotop.png" alt="Home Logo"></a>
+                <a href="../index.html"><img id="site-title" src="../images/topbanner.png" alt="SSJourney"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li> 
+                    <li><a href="">INNER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Mercury.html">Mercury</a></li>
+                            <li><a href="../html/Venus.html">Venus</a></li>
+                            <li><a href="../html/Earth.html">Earth</a></li>
+                            <li><a href="../html/Mars.html">Mars</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">BULLIED</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Ceres.html">Ceres</a></li>
+                            <li><a href="../html/Pluto.html">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">OUTER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Jupiter.html">Jupiter</a></li>
+                            <li><a href="../html/Saturn.html">Saturn</a></li>
+                            <li><a href="../html/Uranus.html">Uranus</a></li>
+                            <li><a href="../html/Neptune.html">Neptune</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/FAQ.html">FAQ</a></li>
+                    <li><a href="../html/AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="page-main">
+        <aside id="left-side">
+            <div class="ad-box"></div>
+                <div id="box1">
+                    <a href="../html/alienTakeover.html">
+                    <img class="ads" src="../images/alien takeover.jpeg" alt="AD 1">
+                    </a>
+                </div>
+                <div id="box2">
+                    <a href="../html/alienTakeover.html">
+                    <img class="ads" src="../images/astronaut black hole.jpeg" alt="AD 2">
+                    </a>
+                </div>
+                <div id="box2">
+                    <a href="../html/alienTakeover.html">
+                    <img class="ads" src="../images/earth black hole.jpeg" alt="AD 3">
+                    </a>
+                </div>
+        </aside>
+        <aside id="right-side">
+            <div class="ad-box"></div>
+                <div id="box1right">
+                    <a href="../html/alienTakeover.html">
+                    <img class="ads" src="../images/asteroid.jpeg" alt="AD 1">
+                    </a>
+                </div>
+                <div id="box2right">
+                    <a href="../html/alienTakeover.html">
+                    <img class="ads" src="../images/spacecasino.jpeg" alt="AD 2">
+                    </a>
+                </div>
+                <div id="box3right">
+                    <a href="../html/alienTakeover.html">
+                    <img class="ads" src="../images/aliensonearth.jpeg" alt="AD 3">
+                    </a>
+                </div>
+        </aside>
+        <section id="main-section">
+            <h1 style="text-align: center;">FREQUENTLY ASKED QUESTIONS</h1>
+            <p id="uptext">Welcome to this fascinating journey through the wonders of our solar system!<br>The reason we’ve compiled these questions and answers is simple: to spark curiosity and inspire a deeper understanding of the incredible cosmic neighborhood we call home. The solar system is more than just a collection of planets, moons, and stars—it’s a story of origins, connections, and possibilities that touches every one of us.</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How did the solar system form?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The solar system formed 4.6 billion years ago from a collapsing cloud of gas and dust. Gravity concentrated the mass into the Sun, while the remaining material coalesced into planets, moons, and smaller bodies.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes Earth unique compared to other planets?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Earth has liquid water, a breathable atmosphere, a protective magnetic field, and life—conditions not found together elsewhere in the solar system.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Why is Pluto no longer considered a planet?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pluto was reclassified as a "dwarf planet" in 2006 because it does not clear its orbit of other debris, a criterion required to be a planet.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Could there be life elsewhere in the solar system?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, moons like Europa and Enceladus have subsurface oceans that may harbor microbial life, and Mars has evidence of past water activity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What causes eclipses?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Eclipses occur when one celestial body blocks another's light, such as the Moon blocking the Sun during a solar eclipse, requiring precise alignments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Why does the Sun shine?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Sun shines because nuclear fusion in its core converts hydrogen into helium, releasing energy as light and heat.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the Kuiper Belt?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Kuiper Belt is a region beyond Neptune filled with icy bodies and dwarf planets, including Pluto, left over from the solar system’s formation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do the planets stay in orbit?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Gravity from the Sun pulls planets inward, while their momentum keeps them moving in stable elliptical orbits.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What are meteor showers?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Meteor showers happen when Earth passes through debris left by comets, which burns up in the atmosphere as streaks of light.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Will the Sun ever "die"?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>In about 5 billion years, the Sun will exhaust its fuel, expand into a red giant, and eventually shrink into a white dwarf, leaving the solar system drastically changed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Why do some planets have moons while others do not?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Moons form through three primary mechanisms: capture of passing objects, accretion from surrounding material, or collisions. Planets with larger gravitational pulls, like Jupiter, are more likely to have moons.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What role does gravity play in the structure of the solar system?
+                        <span class="arrow">&#9661;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Gravity governs the motion of all objects in the solar system. It shapes planetary orbits, holds moons around planets, and binds the Sun and its planetary system together.</p>
+                    </div>
+                </div>
+            </div>            
+        </section>         
+        </main>
+        <footer>
+            <a href="../html/Ceres.html">
+                <img class="foot-img" src="../images/ceres.png" alt="Ceres">
+            </a>
+            <p>This website was created to take over NASA and prove aliens are real and moon landing fake with non-existent funds. Help us!</p>
+            <a href="../html/Pluto.html">
+                <img class="foot-img" src="../images/pluto.png" alt="Pluto">
+            </a> 
+        </footer>
+        <script>
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    faqQuestions.forEach(item => {
+                        if (item !== question) {
+                            item.classList.remove('active'); 
+                            item.nextElementSibling.style.maxHeight = null; 
+                        }
+                    });
+                    question.classList.toggle('active');
+                    const answer = question.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

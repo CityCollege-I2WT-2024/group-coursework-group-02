@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+}
+
+#name {
+   background-image:url(../images/darkstarsky.jpg);
+    padding: 50px;
+    display:flex;
+  color:beige;
+    flex-direction: column;
+    align-items:center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+  
+   
+
+#inp{
+    text-align: left;
+}
+#headers,#line {
+    font-family: monospace;
+    font-size: 3em;
+    animation: color-change 1s infinite;
+    text-align: center;
+    border-radius: 10px;
+    border:dotted;
+  }
+  
+  @keyframes color-change {
+    0% { color: rgb(123, 245, 8); }
+    20% {color:rgb(104, 185, 33); }
+    50% { color: rgb(83, 137, 60); }
+    90% { color: rgb(83, 100, 53); }
+   100% { color: rgb(123, 245, 8); }
+  }
+   
+  #text,.text,#inp{
+
+    color: beige;
+  }
+  .hello{
+   font-size: 25px;
+    color: beige;
+  }
+
+  .picturee{
+    float:right;
+    width: 360px;
+height: 360px;
+border-radius: 30px;  
+border:dotted;
+border-color:rgb(83, 137, 60);
+}
+.caption{
+    color: beige;
+}
+
+.me{
+  float:right;
+  width: 350px;
+height: 350px;
+border-radius: 30px;  
+border:dotted;
+border-color:rgb(83, 137, 60); 
+}

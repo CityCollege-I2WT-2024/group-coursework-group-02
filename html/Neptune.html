@@ -1,0 +1,323 @@
+<!--Valeriia Gerasymenko-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type=text/css href="../other/style.css">
+        <title>Neptune</title>
+        <link rel="icon" type="image/png" href="../images/logotop.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <style>
+            body{
+                background-image: url('../images/Star\ sky.jpg');
+            }
+            header{
+                background-image: url('../images/back-toplogo.jpg');
+                background-size: 100vw 70vh;
+            }
+            h1{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-size: 40px;
+            }
+            h2{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                background: linear-gradient(to right, transparent, 40%, rgb(8, 52, 155), 60%, transparent);
+                margin-top: 50px;
+                font-size: 30px;
+            }
+            p{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 40px;
+                font-size: 18px;
+            }
+            table{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                font-size: 18px;
+            }
+            ul >li{
+                color:rgb(205, 184, 184);
+            }
+            nav ul li ul li ul li a:hover{
+                padding: 10px 2px;
+                display: flex;
+                width: 100%;
+                color: rgb(49, 118, 135);
+            }
+            nav ul li ul li ul.dropdown-menu{
+                display: inline-flex;
+                width: 600%;
+            }
+            #main-part{
+                background-image: url('../images/Neptune/Neptune.png');
+                background-attachment: fixed;
+                background-position: top;
+                background-size: 100vw 90vh;
+                background-repeat: no-repeat;
+            }
+            #bl{
+                margin-left: 300px;
+                margin-right: 300px;
+                margin-bottom: 35px;
+                font-size: 20px;
+            }
+            #smalltext{
+                font-size: 10px;
+            }
+            #num{
+                width:100%;
+                display:flex;
+                height:70px;
+                justify-content: space-evenly;
+                background: linear-gradient(to right, transparent, 40%, rgb(8, 52, 155), 60%, transparent);
+            }
+            #info{
+                width:100%;
+                display:flex;
+                height:70px;
+                justify-content: space-evenly;
+                background: linear-gradient(to right, transparent, 40%, rgb(8, 52, 155), 60%, transparent);
+            }
+            #info2{
+                width:100%;
+                display:flex;
+                height:70px;
+                justify-content: space-evenly;
+                background: linear-gradient(to right, transparent, 40%, rgb(8, 52, 155), 60%, transparent);
+            }
+            .number{
+                font-size:35px;
+                color:rgb(205, 184, 184);
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .text{
+                font-size:20px;
+                color:rgb(205, 184, 184);
+                text-indent: 40px;
+            }
+            .text2{
+                font-size:15px;
+                color:rgb(205, 184, 184);
+                margin-right: 50px;
+            }
+            #facts{
+                margin-top: 105px;
+            }
+            .carousel{
+                display:flex;
+            }
+            .button{
+                font-size:80px;
+                font-family:'Courier New', Courier, monospace; 
+                color:rgb(205, 184, 184);
+                font-weight: bolder;
+                align-content: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .carousel ul{
+                list-style-type: none;
+                padding:0px 20px 0px 20px;
+            }
+            .slide{
+                display: none;
+            }
+            .img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <a href="../index.html"><img id="top-logo" src="../images/logotop.png" alt="Home Logo"></a>
+                <a href="../index.html"><img id="site-title" src="../images/topbanner.png" alt="SSJourney"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li> 
+                    <li><a href="">INNER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Mercury.html">Mercury</a></li>
+                            <li><a href="../html/Venus.html">Venus</a></li>
+                            <li><a href="../html/Earth.html">Earth</a></li>
+                            <li><a href="../html/Mars.html">Mars</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">BULLIED</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="broken-link" href="Ceres.html">Ceres</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the footer!</span>
+                            </li>
+                            <li>
+                                <a class="broken-link" href="Pluto.html">Pluto</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the footer!</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">OUTER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Jupiter.html">Jupiter</a></li>
+                            <li><a href="../html/Saturn.html">Saturn</a></li>
+                            <li><a href="../html/Uranus.html">Uranus</a></li>
+                            <li><a href="../html/Neptune.html">Neptune</a>
+                                <ul class="dropdown-menu">
+                                    <li> <a href="#facts">Quick Facts</a> </li>
+                                    <li> <a href="#color">A Unique Blue Tint</a> </li>
+                                    <li> <a href="#weather">World of Ice and Storms</a> </li>
+                                    <li> <a href="#distance">Not Visible to the Eye</a> </li>
+                                    <li> <a href="#near">Rings and Moons</a> </li>
+                                    <li> <a href="#conclusion">Gallery of photos</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/FAQ.html">FAQ</a></li>
+                    <li><a href="../html/AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id = "main-part">
+            <h1>Neptune: The Mysterious Blue Giant</h1>
+            <p id="bl">Neptune, the eighth and farthest planet from the Sun, is a realm of extremes. Known for its striking blue hue, this distant world offers a wealth of fascinating features that make it a standout in our solar system.</p>
+            <span><h2 data-aos="fade-up" id="facts">Quick Facts</h2></span>
+            <div  data-aos="fade-up" id="info">
+                <span class="text">Diameter</span>
+                <span class="text">Mass</span>
+                <span class="text">Distance from Sun</span>
+                <span class="text">Orbital Period</span>
+                <span class="text">Temperature</span>
+                <span class="text">Moons</span>
+            </div>
+            <div   data-aos="fade-up" id="num">
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+            </div>
+            <div  data-aos="fade-up" id="info2">
+                <span class="text2">km</span>
+                <span class="text2">times bigger<br>than Earth</span>
+                <span class="text2">billion km</span>
+                <span class="text2">Earth years</span>
+                <span class="text2">°C</span>
+                <span class="text2"></span>
+            </div>
+            <a id="color"><h2 data-aos="fade-up">A Unique Blue Tint</h2></a>
+            <p data-aos="fade-up">Neptune’s vibrant blue color isn’t just for show—it’s the result of its atmospheric composition and a thinner haze layer compared to Uranus. While Uranus shifts between greenish and bluish tones depending on its seasons, Neptune maintains its extra blue brilliance, thanks to the interplay of methane in its atmosphere and its distance from the Sun.
+            </p>
+            <a id="weather"><h2 data-aos="fade-up">A World of Ice and Storms</h2></a>
+            <p data-aos="fade-up">Beneath its hydrogen-helium atmosphere lies a mantle of water, methane, and ammonia—elements that give Neptune its "ice giant" classification. Its climate is harsh and unforgiving:
+            </p>
+            <table data-aos="fade-up">
+                <tr>
+                    <th>Seasons That Last a Lifetime:</th>
+                    <th>Cold Beyond Comprehension:</th>
+                    <th>Dark and Mysterious:</th>
+                </tr>
+                <tr>
+                    <td> Seasons on Neptune last for an incredible 40 years each due to its long orbital period.</td>
+                    <td> With almost no sunlight, Neptune's temperatures plummet to an average of -220°C.</td>
+                    <td> The planet receives only a fraction<br>of the sunlight that Earth does, making it one of the darkest corners of our solar system.</td>
+                </tr>
+            </table>
+            <a id="distance"><h2 data-aos="fade-up">Not Visible to the Naked Eye</h2></a>
+            <p data-aos="fade-up">Unlike most other planets, Neptune cannot be seen without a telescope. Its immense distance and faint brightness make it a hidden gem, reserved for those equipped to peer into the depths of space.</p>
+            <a id="near"><h2 data-aos="fade-up">Rings and Moons</h2></a>
+            <p data-aos="fade-up">Though faint, Neptune’s rings are a captivating feature, hinting at the planet’s dynamic history. Its moons, including Triton, are equally intriguing. Triton, in particular, orbits Neptune in a retrograde direction, suggesting it may have been a captured object from the Kuiper Belt.</p>
+            <a id="conclusion"><h2 data-aos="fade-up">Explore the Unknown</h2></a>
+            <p data-aos="fade-up">Neptune is more than just a planet—it’s a gateway to understanding the outer reaches of our solar system. With its mesmerizing rings, moons, and enigmatic blue glow, this ice giant challenges us to continue exploring and uncovering its secrets.</p>
+            <h2 data-aos="fade-up">Gallery of photos:</h2>
+            <div class="carousel">
+                <a class="button" id="previous">&lt;</a>
+                <ul data-aos="fade-up">
+                    <li class="slide"><img src="../images/Neptune/N1.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Neptune/N2.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Neptune/N3.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Neptune/N4.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Neptune/N5.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Neptune/N6.jpg" width="500" height="500"></li>
+                </ul>
+                <a class="button" id="next">&gt;</a>
+            </div>
+            <footer>
+                <a href="../html/Ceres.html">
+                    <img class="foot-img" src="../images/ceres.png" alt="Ceres">
+                </a>
+                <p>This website was created to take over NASA and prove aliens are real and moon landing fake with non-existent funds. Help us!</p>
+                <a href="../html/Pluto.html">
+                    <img class="foot-img" src="../images/pluto.png" alt="Pluto">
+                </a> 
+            </footer>
+        </div>
+        <script>
+            var num1=0;
+            var num2=0;
+            var num3=0;
+            var num4=0;
+            var num5=0;
+            var num6=0;
+            function increase(){
+                var number=document.getElementsByClassName("number");
+                var scrollage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                if(scrollage>10){
+                    const myinterv=setInterval(function(){
+                    number[0].textContent=num1+=2450;
+                    number[1].textContent=num2=18;
+                    number[2].textContent=num3+=0.21;
+                    number[3].textContent=num4+=8.25;
+                    number[4].textContent=num5-=11;
+                    number[5].textContent=16;
+                    if(num1>=49000){
+                        clearInterval(myinterv)}
+                    },30);
+                window.removeEventListener('scroll',increase);
+                }            
+            }
+            window.addEventListener('scroll',increase);
+            AOS.init();
+            let currentSlide = 0;
+            const slides = document.getElementsByClassName("slide");
+            console.log(slides);
+            slides[currentSlide].style.display="block";
+            const nextButton = document.getElementById("next");
+            const nextSlide = function(){
+                slides[currentSlide].style.display="none";
+                currentSlide++;
+                if(currentSlide > slides.length-1){
+                    currentSlide = 0;
+                }
+                slides[currentSlide].style.display="block";
+            }
+            nextButton.addEventListener("click", nextSlide);
+
+            const previousButton = document.getElementById("previous");
+            const previousSlide = function(){
+                slides[currentSlide].style.display="none";
+                currentSlide--;
+                if(currentSlide < 0){
+                    currentSlide = slides.length-1;
+                }
+                slides[currentSlide].style.display="block";
+            }
+            previousButton.addEventListener("click", previousSlide);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(76, 125, 230, 0.8);
+    text-align: center;
+    padding: 50px;
+    border-bottom: 4px solid white;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+
+#about, #projects, #credits, #hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(76, 125, 230, 0.8);
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.text, .text, .text, .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: start;
+}
+
+.image, .image, .image, .image {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+}
+
+img{
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(76, 125, 230, 0.8);
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+}
+
+footer p:hover {
+    color: #FFD700;
+    transform: scale(1.05);
+}

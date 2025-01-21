@@ -1,0 +1,38 @@
+/*Angel Plloca*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium', sans-serif;
+    background: radial-gradient(circle at center, #3edfa1, #62ec6e, #000);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#message h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+    animation: bounceText 1.5s infinite;
+}
+
+#message p {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 30px;
+    animation: bounceText 1.5s 0.3s infinite;
+    text-align: center;
+}
+@keyframes bounceText {
+    0%, 100% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: -10px;
+    }
+}

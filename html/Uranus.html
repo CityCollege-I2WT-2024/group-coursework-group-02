@@ -1,0 +1,329 @@
+<!--Valeriia Gerasymenko-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type=text/css href="../other/style.css">
+        <title>Uranus</title>
+        <link rel="icon" type="image/png" href="../images/logotop.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <style>
+            body{
+                background-image: url('../images/Star\ sky.jpg');
+            }
+            header{
+                background-image: url('../images/back-toplogo.jpg');
+                background-size: 100vw 70vh;
+            }
+            h1{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-size: 40px;
+            }
+            h2{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                background: linear-gradient(to right, transparent, 40%,  rgb(15, 150, 168), 60%, transparent);
+                margin-top: 50px;
+                font-size: 30px;
+            }
+            p{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 40px;
+                font-size: 18px;
+            }
+            table{
+                color:rgb(205, 184, 184);
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                font-size: 18px;
+            }
+            ul >li{
+                color:rgb(205, 184, 184);
+            }
+            nav ul li ul li ul li a:hover{
+                padding: 10px 2px;
+                display: flex;
+                width: 100%;
+                color: rgb(49, 118, 135);
+            }
+            nav ul li ul li ul.dropdown-menu{
+                display: inline-flex;
+                width: 600%;
+            }
+            #main-part{
+                background-image: url('../images/Uranus/Uranus.png');
+                background-attachment: fixed;
+                background-position: top;
+                background-size: 100vw 100vh;
+                background-repeat: no-repeat;
+            }
+            #bl{
+                margin-left: 300px;
+                margin-right: 300px;
+                margin-bottom: 35px;
+                font-size: 20px;
+            }
+            #smalltext{
+                font-size: 10px;
+            }
+            #num{
+                width:100%;
+                display:flex;
+                height:70px;
+                justify-content: space-evenly;
+                background: linear-gradient(to right, transparent, 40%, rgb(17, 134, 149), 60%, transparent);
+            }
+            #info{
+                width:100%;
+                display:flex;
+                height:70px;
+                justify-content: space-evenly;
+                background: linear-gradient(to right, transparent, 40%, rgb(17, 134, 149), 60%, transparent);
+            }
+            #info2{
+                width:100%;
+                display:flex;
+                height:70px;
+                justify-content: space-evenly;
+                background: linear-gradient(to right, transparent, 40%, rgb(17, 134, 149), 60%, transparent);
+            }
+            .number{
+                font-size:35px;
+                color:rgb(205, 184, 184);
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .text{
+                font-size:20px;
+                color:rgb(205, 184, 184);
+                text-indent: 40px;
+            }
+            .text2{
+                font-size:15px;
+                color:rgb(205, 184, 184);
+                margin-right: 50px;
+            }
+            #facts{
+                margin-top: 105px;
+            }
+            .carousel{
+                display:flex;
+            }
+            .button{
+                font-size:80px;
+                font-family:'Courier New', Courier, monospace; 
+                color:rgb(205, 184, 184);
+                font-weight: bolder;
+                align-content: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .carousel ul{
+                list-style-type: none;
+                padding:0px 20px 0px 20px;
+            }
+            .slide{
+                display: none;
+            }
+            .img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <a href="../index.html"><img id="top-logo" src="../images/logotop.png" alt="Home Logo"></a>
+                <a href="../index.html"><img id="site-title" src="../images/topbanner.png" alt="SSJourney"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li> 
+                    <li><a href="">INNER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/mercury.html">Mercury</a></li>
+                            <li><a href="../html/Venus.html">Venus</a></li>
+                            <li><a href="../html/Earth.html">Earth</a></li>
+                            <li><a href="../html/Mars.html">Mars</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">BULLIED</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="broken-link" href="Ceres.html">Ceres</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the footer!</span>
+                            </li>
+                            <li>
+                                <a class="broken-link" href="Pluto.html">Pluto</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the footer!</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="">OUTER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Jupiter.html">Jupiter</a></li>
+                            <li><a href="../html/Saturn.html">Saturn</a></li>
+                            <li>
+                                <a href="../html/Uranus.html">Uranus</a>
+                                <ul class="dropdown-menu">
+                                    <li> <a href="#facts">Quick Facts</a> </li>
+                                    <li> <a href="#color">A Pale Blue-Green World</a> </li>
+                                    <li> <a href="#tilt">Extreme Tilt</a> </li>
+                                    <li> <a href="#near">Moons and Rings</a> </li>
+                                    <li> <a href="#interior">Ice Giant</a> </li>
+                                    <li> <a href="#conclusion">Gallery of photos</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="../html/Neptune.html">Neptune</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/FAQ.html">FAQ</a></li>
+                    <li><a href="../html/AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id = "main-part">
+            <h1>Uranus: The Tilted Ice Giant</h1>
+            <p id="bl">Uranus, the seventh planet from the Sun, stands out as one of the most unusual members of our solar system. Its extreme axial tilt, icy composition, and unique rotation make it a fascinating world to explore.</p>
+            <span><h2 data-aos="fade-up" id="facts">Quick Facts</h2></span>
+            <div  data-aos="fade-up" id="info">
+                <span class="text">Diameter</span>
+                <span class="text">Mass</span>
+                <span class="text">Distance from Sun</span>
+                <span class="text">Orbital Period</span>
+                <span class="text">Temperature</span>
+                <span class="text">Moons</span>
+            </div>
+            <div   data-aos="fade-up" id="num">
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+                <span class="number">0</span>
+            </div>
+            <div  data-aos="fade-up" id="info2">
+                <span class="text2">km</span>
+                <span class="text2">times bigger<br>than Earth</span>
+                <span class="text2">billion km</span>
+                <span class="text2">Earth years</span>
+                <span class="text2">°C</span>
+                <span class="text2"></span>
+            </div>
+            <a id="color"><h2 data-aos="fade-up">A Pale Blue-Green World</h2></a>
+            <p data-aos="fade-up">Uranus’s soft blue-green color comes from the methane in its atmosphere, which absorbs red light and reflects blue and green hues. Compared to Neptune, Uranus has a thicker haze layer that mutes its colors, giving it a more subdued appearance.
+            </p>
+            <a id="tilt"><h2 data-aos="fade-up">Extreme Axial Tilt</h2></a>
+            <table data-aos="fade-up">
+                <tr>
+                    <th>Tilt:</th>
+                    <th>Seasons:</th>
+                    <th>Retrograde Rotation:</th>
+                </tr>
+                <tr>
+                    <td>Uranus rotates on an axis tilted by 97.8 degrees, effectively rolling on its side compared to other planets. This means its poles are where most planets have their equators.</td>
+                    <td>This unique orientation causes extreme seasonal variations, with each pole experiencing 42 years of continuous sunlight followed by 42 years of darkness during Uranus’ 84-year orbit around the Sun.</td>
+                    <td>Like Venus, Uranus rotates in the opposite direction of most planets, spinning clockwise when viewed from above its north pole.</td>
+                </tr>
+            </table>
+            <a id="near"><h2 data-aos="fade-up">Mysterious Moons and Rings</h2></a>
+            <p data-aos="fade-up">Uranus’s moons are an eclectic group named after characters from literature by Shakespeare and Alexander Pope. Some of its moons, like Miranda, feature dramatic surface features such as cliffs and canyons, hinting at a tumultuous past.</p>
+            <a id="interior"><h2 data-aos="fade-up">An Ice Giant’s Interior</h2></a>
+            <p data-aos="fade-up">Like Neptune, Uranus is classified as an ice giant due to its composition. Beneath its hydrogen-helium atmosphere lies a mantle of icy water, methane, and ammonia. However, Uranus is distinct in its extreme weather and internal structure:</p>
+            <table data-aos="fade-up">
+                <tr>
+                    <th>Coldest Planet:</th>
+                    <th>Faint Rings:</th>
+                </tr>
+                <tr>
+                    <td>Despite being farther from the Sun, Neptune is warmer than Uranus.</td>
+                    <td>Uranus's rings are composed of dark particles and are difficult to observe.</td>
+                </tr>
+            </table>
+            <a id="conclusion"><h2 data-aos="fade-up">The Alluring Mystery of Uranus</h2></a>
+            <p data-aos="fade-up">With its sideways rotation, icy layers, and frigid atmosphere, Uranus challenges our understanding of planetary formation and dynamics. As scientists continue to study this tilted ice giant, it serves as a reminder of the incredible diversity of worlds in our solar system.</p>
+            <h2 data-aos="fade-up">Gallery of photos:</h2>
+            <div class="carousel">
+                <a class="button" id="previous">&lt;</a>
+                <ul data-aos="fade-up">
+                    <li class="slide"><img src="../images/Uranus/U1.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Uranus/U2.png" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Uranus/U3.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Uranus/U4.jpg" width="500" height="500"></li>
+                    <li class="slide"><img src="../images/Uranus/U5.png" width="500" height="500"></li>
+                </ul>
+                <a class="button" id="next">&gt;</a>
+            </div>
+            <footer>
+                <a href="../html/Ceres.html">
+                    <img class="foot-img" src="../images/ceres.png" alt="Ceres">
+                </a>
+                <p>This website was created to take over NASA and prove aliens are real and moon landing fake with non-existent funds. Help us!</p>
+                <a href="../html/Pluto.html">
+                    <img class="foot-img" src="../images/pluto.png" alt="Pluto">
+                </a> 
+            </footer>
+        </div>
+        <script>
+            var num1=0;
+            var num2=0;
+            var num3=0;
+            var num4=0;
+            var num5=0;
+            var num6=0;
+            function increase(){
+                var number=document.getElementsByClassName("number");
+                var scrollage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                if(scrollage>10){
+                    const myinterv=setInterval(function(){
+                    number[0].textContent=num1+=2535;
+                    number[1].textContent=num2=18;
+                    number[2].textContent=num3=3;
+                    number[3].textContent=num4+=4.25;
+                    number[4].textContent=num5-=11.25;
+                    number[5].textContent=27;
+                    if(num1>=50700){
+                        clearInterval(myinterv)}
+                    },30);
+                window.removeEventListener('scroll',increase);
+                }            
+            }
+            window.addEventListener('scroll',increase);
+            AOS.init();
+            let currentSlide = 0;
+            const slides = document.getElementsByClassName("slide");
+            console.log(slides);
+            slides[currentSlide].style.display="block";
+            const nextButton = document.getElementById("next");
+            const nextSlide = function(){
+                slides[currentSlide].style.display="none";
+                currentSlide++;
+                if(currentSlide > slides.length-1){
+                    currentSlide = 0;
+                }
+                slides[currentSlide].style.display="block";
+            }
+            nextButton.addEventListener("click", nextSlide);
+
+            const previousButton = document.getElementById("previous");
+            const previousSlide = function(){
+                slides[currentSlide].style.display="none";
+                currentSlide--;
+                if(currentSlide < 0){
+                    currentSlide = slides.length-1;
+                }
+                slides[currentSlide].style.display="block";
+            }
+            previousButton.addEventListener("click", previousSlide);
+        </script>
+    </body>
+</html>

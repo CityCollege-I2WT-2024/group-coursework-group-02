@@ -1,0 +1,242 @@
+<!--Ani Ghaltakhchyan-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type=text/css href="../other/style.css">
+        <title>Earth</title>
+        <link rel="icon" type="image/png" href="../images/logotop.png">
+        <style>
+            /*the information of the planet for the webpage was generated with chatgpt*/
+            /*the 3d models where taken from nasa*/
+            body{
+                background-image: url('../images/Star\ sky.jpg');
+            }
+            header{
+                background-image: url('../images/back-toplogo.jpg');
+                background-size: 100vw 70vh;
+            }
+            h1{
+                color:(205,184,184);
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-size: 45px;
+            }
+
+            h2{
+                color:(205,184,184);
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-size: 45px;
+            }
+
+
+            p{
+                color:(205,184,184);
+                text-align: center;
+                margin-left: 85px;
+                margin-right: 85px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+
+            .carousel{
+                display:flex;
+            }
+            .carousel ul{
+                list-style-type: none;
+                padding:0px 20px 0px 20px;
+            }
+            .button{
+                font-size:50px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(223, 113, 190);
+                align-content:space-around;
+                margin-right:5px;
+                margin-left:5px;
+                display: block;
+            }
+            .img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+            }
+            .slide{
+                display: none;
+                border: 2px solid rgb(223, 113, 190);
+                border-radius: 20px;
+            }
+            nav ul li ul li ul li{
+                padding: 15px 5px;
+                display: flex;
+                width: 100%;
+            }
+            nav ul li ul li ul.dropdown-menu {
+                display: inline-flex;
+                width: 400%;
+            }
+
+
+            #egenov {
+                flex: 1; 
+                margin-right: 20px; 
+            }
+
+
+            #instrukcianer{
+            text-align: center;
+            list-style-type: disc;
+            width: auto;
+            height: auto;
+            background-color: rgba(85, 208, 239, 0.1);
+            border: 2px solid rgb(223, 113, 190);
+            border-radius: 20px;
+            padding: 15px;
+            padding-top: 0;
+            line-height:normal;
+            display: block;
+            }
+
+            #bh{
+                margin-left: 30%;
+                margin-right: 30%;
+
+            }
+
+            #Question{
+            text-align: center;
+            list-style-type: disc;
+            width: auto;
+            height: auto;
+            background-color: rgba(85, 208, 239, 0.1);
+            border: 2px solid rgb(223, 113, 190);
+            border-radius: 10px;
+            padding: 10px;
+            padding-top: 0;
+            line-height:normal;
+            display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <a href="../index.html"><img id="top-logo" src="../images/logotop.png" alt="Home Logo"></a>
+                <a href="../index.html"><img id="site-title" src="../images/topbanner.png" alt="SSJourney"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li> 
+                    <li><a href="">INNER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/mercury.html">Mercury</a></li>
+                            <li><a href="../html/Venus.html">Venus</a></li>
+                            <li>
+                                <a href="../html/Earth.html">Earth</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#egenov">General Overview</a></li>
+                                    <li><a href="#Moon">Moon</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../html/Mars.html">Mars</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">BULLIED</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="broken-link" href="Ceres.html">Ceres</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the footer!</span>
+                            </li>
+                            <li>
+                                <a class="broken-link" href="Pluto.html">Pluto</a>
+                                <span class="broken-message" >Oh oh, this should have worked! Try using the footer!</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="">OUTER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/Jupiter.html">Jupiter</a></li>
+                            <li><a href="../html/Saturn.html">Saturn</a></li>
+                            <li><a href="../html/Uranus.html">Uranus</a></li>
+                            <li><a href="../html/Neptune.html">Neptune</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/FAQ.html">FAQ</a></li>
+                    <li><a href="../html/AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div id="egenov">
+                <h1>Earth: The Living World</h1>
+                <p id="idk">Earth is the third planet from the Sun and the only known celestial body to support life.</p>
+                <p id="atmosphere">Earth has a unique atmosphere composed mainly of nitrogen and oxygen, which helps sustain life and regulate temperature. </p>
+                <p id="surface">Earth's surface is 71% water, with the rest being land, including mountains, plains, and deserts. It has a dynamic climate system and is home to millions of species, making it incredibly diverse.</p>
+            </div>
+                <div id="astvac" style="width: 50%; float: left; text-align: left; padding: 20px;">
+                    <p id="instrukcianer">
+                            <br>Below you can see the 3D model of Earth.
+                            <br>For Rotating the model drag your mouse!
+                            <br>For zoom in or zoom out enter fullscreen or use your mouse.
+                            <br>You can also chose other planets to see.
+                            <br>Borrowed from NASA🤫
+                    </p>
+                </div>
+                <div style="width: 50%; float: left; text-align: left; padding: 20px;">
+                <iframe  width="650px" height="470px" src="https://eyes.nasa.gov/apps/solar-system/#/earth?interactPrompt=true" allowfullscreen ></iframe>
+            </div>
+        </div>
+
+        <div id="efacts">
+            <a id="ft"><h2>Intersting facts</h2></a>
+            <p id="f1">Earth is an oblate spheroid, meaning it’s slightly flattened at the poles and bulges at the equator due to its rotation. This gives it a "squished" shape.</p>
+            <p id="f2">About 70% of Earth’s surface is covered in water, but only 3% of that is freshwater, and the rest is saltwater in oceans.</p>
+            <p id="f3">The temperature of Earth’s inner core is estimated to be around 10,800°F (6,000°C)—similar to the surface of the Sun.</p>
+            <p id="f4">Billions of years ago, a day on Earth was only about 6 hours long. Over time, the Moon’s gravitational pull has slowed Earth’s rotation.</p>
+        </div>
+        <div class="carousel">
+            <a class="button" id="previous"> &lt;</a>
+            <ul>
+                <li class="slide"><img src="../images/earth/E1.jpeg" height="400" wight="400"></li>
+                <li class="slide"><img src="../images/earth/E2.jpeg" height="400" wight="400"></li>
+                <li class="slide"><img src="../images/earth/E3.jpeg" height="400" wight="400"></li>
+                <li class="slide"><img src="../images/earth/E4.jpeg" height="400" wight="400"></li>
+                <li class="slide"><img src="../images/earth/E5.jpeg" height="400" wight="400"></li>
+            </ul>
+            <a class="button" id="next"> &gt;</a>
+        </div>
+        <div id ="Moon">
+            <a id="mun"><h2>Moon</h2></a>
+            <p id="m1">The Moon is Earth's only natural satellite and the fifth-largest moon in the solar system. It formed around 4.5 billion years ago, likely from debris after a Mars-sized body collided with Earth. The Moon plays a crucial role in stabilizing Earth’s axial tilt and influencing tides.</p>
+            <p id="m2">The Moon lacks an atmosphere, so there’s no weather, wind, or sound. Its surface remains unchanged for billions of years.</p>
+            <p id="m3">The Moon is tidally locked to Earth, meaning we always see the same side. The far side wasn’t seen until 1959 by a Soviet spacecraft.</p>
+            <p id="m4">During a total lunar eclipse, the Moon turns red due to Earth’s atmosphere scattering sunlight—a phenomenon called Rayleigh scattering.</p>
+        </div>
+        <iframe id="bh" width="650px" height="470px" src="https://eyes.nasa.gov/apps/solar-system/#/earth/moons/moon?interactPrompt=true" allowfullscreen ></iframe>
+
+        <div id="Question">
+            <p id="tt">
+                    <br>Do You Question the Moon Landing?
+                    <br>For decades, the Moon landing has sparked debates, awe, and a bit of skepticism. Was it real? Was it fake? Why not find out for yourself?
+                    <br>Now’s your chance to experience the Moon firsthand and put all doubts to rest. Step into history and explore the lunar surface — no green screen, no special effects. Just you, the stars, and the truth.
+                    <br>Click here if you are brave enough!!! 
+                    <a href="moonlanding.html">Moon landing mission</a>
+            </p>
+        </div>
+
+
+        <footer>
+            <a href="../html/Ceres.html">
+            <img class="foot-img" src="../images/ceres.png" alt="Ceres">
+            </a>
+            <p>This website was created to take over NASA and prove aliens are real and moon landing fake with non-existent funds. Help us!</p>
+            <a href="../html/Pluto.html">
+            <img class="foot-img" src="../images/pluto.png" alt="Pluto">
+            </a>
+        </footer>
+
+        <script src="../other/earthScript.js"></script>
+    </body>
+</html>

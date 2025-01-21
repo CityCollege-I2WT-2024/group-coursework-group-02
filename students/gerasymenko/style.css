@@ -1,0 +1,77 @@
+body{
+    background-image: url('../gerasymenko/images/Star\ sky.jpg');
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgba(28, 28, 28, 0.8);
+    text-align: center;
+    padding: 50px;
+}
+header h1{
+    color:rgb(205, 184, 184);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+nav a:hover {
+    color: #cbe08e;
+    transform: scale(1.1);
+}
+main {
+    padding: 20px;
+}
+img{
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 25%;
+    max-height:15%;
+    float: right;
+}
+h2{
+    color:rgb(205, 184, 184);
+    text-align: left;
+    margin-top: 50px;
+    font-size: 30px;
+}
+p{
+    color:rgb(205, 184, 184);
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+ul >li{
+    color:rgb(205, 184, 184);
+    font-size: 18px;
+}
+ul{
+    color:rgb(205, 184, 184);
+    font-size: 18px;
+}
+#first, #second, #third, #fourth {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    background-color: rgba(28, 28, 28, 0.8);
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(0);
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+    text-align: start;
+    flex: 1;
+}

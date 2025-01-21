@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello, It’s Me – Ani</title>
+        <style>
+            body {
+                background-color: lightpink;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 60px;
+                margin: 20px 0;
+            }
+
+            
+            .flex-container {
+                display: flex; 
+                justify-content: space-between; 
+                align-items: flex-start; 
+                padding: 20px;
+                gap: 20px; 
+            }
+
+            
+            #vayhorsarev {
+                flex: 1;
+                border: 2px solid rgb(223, 113, 190);
+                border-radius: 20px;
+                padding: 15px;
+                line-height: 1.5;
+                font-size: 20px;
+                margin: 0;
+                width: 45%;
+                height: 50%; 
+                text-align: left;
+                margin-left: 5%;
+            }
+
+            
+            img {
+                flex: 1; 
+                max-width: 20%;
+                height: auto; 
+                border-radius: 10px;
+                border: 2px solid rgb(223, 113, 190);
+                display: block; 
+            }
+
+            
+            @media (max-width: 768px) {
+                .flex-container {
+                    flex-direction: column; 
+                    align-items: center; 
+                    text-align: center;
+                }
+
+                #vayhorsarev {
+                    max-width: 80%; 
+                    text-align: center;
+                }
+
+                img {
+                    max-width: 50%; 
+                    margin-top: 20px;
+                }
+            }
+            #vayhorsarev2 {
+                flex: 1; 
+                background-color: rgba(85, 208, 239, 0.1);
+                border: 2px solid rgb(223, 113, 190);
+                border-radius: 20px;
+                padding: 15px;
+                line-height: 1.5;
+                font-size: large;
+                margin: 0;
+                width: 45%;
+                height: 50%; 
+                text-align: left;
+                margin-left: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello there!</h1>
+        <div class="flex-container">
+            
+            <p id="vayhorsarev">
+                <img src="../Ani/prkeceq.JPG" alt="Ani's Picture">
+                <br>Hi! My name is Ani and I'm from Yerevan, Armenia. I was born on August 19, 2006 and am 18 years old.
+                <br>Currently, I’m a first-year student at University of York, City College, where I’m deep diving into Computer Science.
+                <br>Besides computer science, I'm also interested in playing guitar, tennis, I love reading and crocheting. That's it, I guess.
+                <br>If you care, my favourite color is red, favourite movie is probably <i>Strangers from Hell</i> (I highly suggest you to watch it), and my favourite animal is a kitty👐.
+                <br>
+                <br>It was a great pleasure working with this team. We had a great time working together, everybody did an amazing job.
+                <br>I worked on these webpages:
+                <br>&bull;Earth</a>
+                <br>&bull;Jupiter</a>
+                <br>&bull;Mars</a>
+                <br>&bull;Moonlanding form</a>
+                <br>&bull;Terms and Conditions</a>
+                <br>Sources that I have used: <a href="https://www.w3schools.com">W3Schools</a>, <a href="https://www.nasa.gov">NASA</a>, <a href="https://www.freecodecamp.org">freecodecamp</a>
+
+        </div>
+    </body>
+</html>

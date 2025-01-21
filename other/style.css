@@ -1,0 +1,522 @@
+/* Angel Plloca */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+body {
+    background-image: url(../images/darkstarsky.jpg);
+    font-family: "Oxanium", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+p,h1,h2{
+    color:aliceblue;
+}
+a{
+    cursor: pointer;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;  
+    border-bottom: 3px solid rgb(85, 208, 239); 
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    flex-grow: 1;
+}
+#top-logo{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+#site-title{
+    width: 700px;
+    height: auto;
+}
+img {
+    overflow-y: content-box;
+    overflow: clip;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    display:inline-block;
+    font-size: 20px;
+    transition: all ease-in 0.2s;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+}
+nav ul .dropdown-menu{
+    position: absolute;
+    width: 100px;
+    list-style: none;
+    opacity: 0;
+    background-color: rgb(45, 43, 43);
+    text-align: center;
+    z-index: -1;
+    margin-top: -60px;
+    display: block;
+    transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    border-radius: 15px;
+}
+nav ul .dropdown-menu li{
+    margin: 0;
+    width: 100%;
+} 
+nav ul .dropdown-menu li a{
+    padding: 10px 2px;
+    display: inline-block;
+    width: 100%;
+}
+nav ul li a:hover{
+    color: rgb(85, 208, 239);
+}
+nav ul li:hover > .dropdown-menu{
+   opacity: 1;
+   margin-top: 0;
+   z-index: 2;
+}
+.broken-message{
+    display: none;
+    position: absolute;
+    background-color: rgba(45, 43, 43, 0.9);
+    color: aliceblue;
+    left: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 15;
+    margin-top: 5px;
+    margin-left: 5px;
+    transform: translateY(-50%);
+}
+.broken-link{
+    position: relative;
+}
+#page-main{
+    display: flex;
+    justify-content: space-between;
+}
+aside {
+    margin-top: 10px;
+    padding: 10px;
+    width: 15%;
+    background-image: url(../images/design3.png);
+    background-position: center;
+    background-size: auto; 
+    border: solid rgb(85, 208, 239) 3px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.ads:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.ad-box{
+    display: block;
+    position: sticky;
+}
+.ads{
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: auto;
+    padding-left: 5px;
+    max-width: 255px;
+}
+#left-side{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    left: 0;
+    align-self: center;
+}
+#right-side{
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    right: 0;
+    align-self: center;
+}
+#main-section{
+    order: 2;
+    width: auto;
+    background-color: inherit;
+    padding: 20px;
+    max-width: 950px;
+}
+#map-container {
+    position: relative;
+    text-align: center;
+}
+#map{
+    margin-top: 100px;
+    text-align: center;
+    border: solid aliceblue 5px;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+#map-message {
+    display: none;
+    background-color: rgba(45, 43, 43, 0.9);
+    color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    max-width: fit-content;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+    text-align: center;
+    position: static;
+}
+#countdown-container{
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    background-color: rgba(17, 17, 17);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+}
+#countdown{
+    font-size: 30px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+#button{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color:rgb(17, 17, 17);
+    border: solid aliceblue 2px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition:all ease-in 0.2s;
+}
+#button:hover {
+    color: rgb(85, 208, 239);
+    
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+}
+.foot-img{
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+/* Angel Plloca */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+body {
+    background-image: url(../images/darkstarsky.jpg);
+    font-family: "Oxanium", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+p,h1,h2{
+    color:aliceblue;
+}
+a{
+    cursor: pointer;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;  
+    border-bottom: 3px solid rgb(85, 208, 239); 
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    flex-grow: 1;
+}
+#top-logo{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+#site-title{
+    width: 700px;
+    height: auto;
+}
+img {
+    overflow-y: content-box;
+    overflow: clip;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    display:inline-block;
+    font-size: 20px;
+    transition: all ease-in 0.2s;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+}
+nav ul .dropdown-menu{
+    position: absolute;
+    width: 100px;
+    list-style: none;
+    opacity: 0;
+    background-color: rgb(45, 43, 43);
+    text-align: center;
+    z-index: -1;
+    margin-top: -60px;
+    display: block;
+    transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    border-radius: 15px;
+}
+nav ul .dropdown-menu li{
+    margin: 0;
+    width: 100%;
+} 
+nav ul .dropdown-menu li a{
+    padding: 10px 2px;
+    display: inline-block;
+    width: 100%;
+}
+nav ul li a:hover{
+    color: rgb(85, 208, 239);
+}
+nav ul li:hover > .dropdown-menu{
+   opacity: 1;
+   margin-top: 0;
+   z-index: 2;
+}
+.broken-message{
+    display: none;
+    position: absolute;
+    background-color: rgba(45, 43, 43, 0.9);
+    color: aliceblue;
+    left: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 15;
+    margin-top: 5px;
+    margin-left: 5px;
+    transform: translateY(-50%);
+}
+.broken-link{
+    position: relative;
+}
+#page-main{
+    display: flex;
+    justify-content: space-between;
+}
+aside {
+    margin-top: 10px;
+    padding: 10px;
+    width: 15%;
+    background-image: url(../images/design3.png);
+    background-position: center;
+    background-size: auto; 
+    border: solid rgb(85, 208, 239) 3px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.ads:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.ad-box{
+    display: block;
+    position: sticky;
+}
+.ads{
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: auto;
+    padding-left: 5px;
+    max-width: 255px;
+}
+#left-side{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    left: 0;
+    align-self: center;
+}
+#right-side{
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    right: 0;
+    align-self: center;
+}
+#main-section{
+    order: 2;
+    width: auto;
+    background-color: inherit;
+    padding: 20px;
+    max-width: 950px;
+}
+#map-container {
+    position: relative;
+    text-align: center;
+}
+#map{
+    margin-top: 100px;
+    text-align: center;
+    border: solid aliceblue 5px;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+#map-message {
+    display: none;
+    background-color: rgba(45, 43, 43, 0.9);
+    color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    max-width: fit-content;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+    text-align: center;
+    position: static;
+}
+#countdown-container{
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    background-image: url(../images/darkstarsky.jpg);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+}
+#countdown{
+    font-size: 30px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+#button{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: solid aliceblue 2px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition:all ease-in 0.2s;
+}
+#button:hover {
+    color: rgb(85, 208, 239);
+    
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(85, 208, 239, 0.7);
+}
+.foot-img{
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(17, 17, 17);
+    }
+    header {
+        flex-direction: row;
+        padding: 20px 0;
+    }
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    #page-main {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 100vh;
+    }
+    aside {
+        position: relative;
+        width: auto;
+        margin-bottom: 20px;
+        max-height: 100vh;
+    }
+    #main-section {
+        width: auto;
+        max-width: none;
+        max-height: 100vh;
+    }
+    #map-container {
+        margin-top: 20px;
+    }
+    footer {
+        flex-direction: row;
+        text-align: center;
+    }
+}
